@@ -1,0 +1,14 @@
+version: 2
+
+exposures:
+  - name: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://3565f062.us1a.app.preset.io/superset/dashboard/8/?native_filters_key=qUpJ3mPLGgz9Mgxx5p7xxa_HinpxorAGciG9c_j_eAdmSbXU96g1OxSiyyrVSazD
+    description: Executive Dashboard about Airbnb listings and hosts
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('fullmoon_reviews')
+    owner:
+      name: Shreyas Katariya
+      email: katshreyas@gmail.com
